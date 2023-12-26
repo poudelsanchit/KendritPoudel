@@ -16,6 +16,11 @@ export default {
       Poppins: ['Poppins', 'sans-serif'],
       Roboto: ['Roboto Mono', 'monospace']
     },
+    backgroundImage:{
+      hero: 'url(src/assets/kendrit.png)',
+      shape: 'url(src/assets/blob.svg)'
+
+    }
   },
   plugins: [],
 }
