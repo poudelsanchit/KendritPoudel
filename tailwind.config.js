@@ -9,7 +9,9 @@ export default {
       colors:{
        'bg-dark': '#0d0d0d',
        'txtprimary':'#b7ab98 ',
-       'txtsecondary': '#c84c31'
+       
+       'txtsecondary': '#c84c31',
+       'txttertiary':'#4b4b4b'
       }
     },
     fontFamily: {

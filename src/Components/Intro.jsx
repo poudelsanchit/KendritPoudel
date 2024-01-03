@@ -4,14 +4,14 @@ import KendritImage from '../assets/kendrit.png';
 
 const Intro = () => {
   return (
-    <div className="flex sm:flex-row flex-col  h-screen  gap-10">
+    <div className="flex sm:flex-row flex-col  h-auto sm:min-h-screen  gap-10">
       <div className="flex flex-col sm:w-full pt-48 gap-1">
         <div className="tracking-[0.2em] font-bold text-2xl">
           kendrit Poudel
         </div>
         <div className="flex flex-wrap text-7xl font-[750] pt-2 tracking-tight ">
           <p>
-            <span className="text-txtsecondary">ARCHITECT</span>{" "}
+            <span className="text-txtsecondary text-5xl sm:text-7xl">ARCHITECT</span>{" "}
           </p>
         </div>
         <div className="flex flex-wrap text-xl  pt-2 font-normal  ">
