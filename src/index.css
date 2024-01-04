@@ -34,3 +34,13 @@ body::-webkit-scrollbar-thumb {
   /* border-radius: 75% 25% 25% 75% / 49% 38% 62% 51%; */
 
 }
+
+.mask{
+  position: absolute;
+  mask-image: url('../public/mask.svg');
+  background-color: #c84c31;
+  mask-size: 100px;
+  mask-repeat: no-repeat;
+  color: black;
+}
+
