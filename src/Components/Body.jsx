@@ -5,6 +5,7 @@ import { FaBasketball } from "react-icons/fa6";
 import { PiFacebookLogoFill } from "react-icons/pi";
 import Intro from './Intro';
 import AboutMe from './AboutMe';
+import Kendrit from '../assets/kp1.png'
 const Body = () => {
   const links = [
     {
@@ -32,11 +33,11 @@ const Body = () => {
     <>
       <div className=" bg-bg-dark h-auto text-txtprimary font-poppins flex justify-end ">
        
-        <div className="w-2/12  h-full flex justify-center items-center absolute left-0 ">
+        <div className="w-2/12  h-full flex justify-center items-center fixed left-0 ">
           {/* make it float fixed on the position */}
-          <div className="h-5/6 w-7/12  flex flex-col justify-between  ">
+          <div className="h-5/6 w-7/12  flex flex-col justify-between   ">
             <div className="font-Poppins font-bold z-50">
-              KENDRIT 
+              <img src={Kendrit} alt=""  className='h-12'/> 
             </div>
             <div className="flex flex-col gap-10  text-xl ">
               {links.map((items) => {
