@@ -47,8 +47,7 @@ const linkItems = ["ABOUT", "JOURNEY", "PROJECTS", "CONTACT"];
           <div className="h-5/6 w-6/12  flex flex-col items-end    ">
             <div className="font-Poppins text-sm font-medium z-50 flex flex-col tracking-wider gap-1">
               {linkItems.map((item, index) => (
-                <div key={index} className={index===0? "flex justify-end cursor-pointer": "flex justify-end cursor-pointer text-txttertiary
-                "}>
+                <div key={index} className={index===0? "flex justify-end cursor-pointer": "flex justify-end cursor-pointer text-txttertiary"}>
                   {item}
                 </div>
               ))}
