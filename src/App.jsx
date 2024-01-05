@@ -4,6 +4,8 @@ import BottomNavBar from './Components/BottomNavBar';
 import {motion} from 'framer-motion'
 import useMousePosition from './utils/useMousePosition';
 import Career from './Components/Career';
+import Projects from './Components/Projects';
+import Contact from './Components/Contact';
 const App = () => {
   const {x,y}= useMousePosition();
 
@@ -26,6 +28,9 @@ const App = () => {
         />
         <Body />
         <Career/>
+        <Projects/>
+        <Contact/>
+
         <BottomNavBar />
       </div>
     </>

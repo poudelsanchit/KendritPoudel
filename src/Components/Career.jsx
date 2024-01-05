@@ -7,7 +7,7 @@ const Career = () => {
       company: "Mantra Architects",
     },
     {
-      time: "2022",
+      time: "2023",
       position: "Completed Bachelor",
       company: "Institute of Engineering, Pulchowk Campus",
     },
@@ -19,10 +19,10 @@ const Career = () => {
   ];
     return (
       <>
-        <div className="w-full flex justify-center text-txtprimary">
-          <div className="flex  flex-col mb-96 gap-5 h-screen pt-20 w-full">
+        <div className="w-full flex justify-center text-txtprimary ">
+          <div className="flex  flex-col  gap-5 min-h-screen pt-20 w-full z-50">
             <div className="tracking-[0.2em] font-semibold text-xl flex justify-center  ">
-            <div className="w-8/12">My Journey</div>
+            <div className="w-8/12 ">My Journey</div>
 
             </div>
             <div className="flex  flex-col   text-4xl  font-[550] tracking-tight">
