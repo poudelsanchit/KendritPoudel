@@ -4,7 +4,7 @@ import KendritImage from '../assets/kendrit.png';
 
 const Intro = () => {
   return (
-    <div className="flex sm:flex-row flex-col  h-auto sm:min-h-screen  gap-10">
+    <div className="flex lg:flex-row flex-col  h-auto sm:min-h-screen  gap-10">
       <div className="flex flex-col sm:w-full pt-48 gap-1">
         <div className="tracking-[0.2em] font-bold text-2xl">
           kendrit Poudel
