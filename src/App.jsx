@@ -3,6 +3,7 @@ import Body from './Components/Body';
 import BottomNavBar from './Components/BottomNavBar';
 import {motion} from 'framer-motion'
 import useMousePosition from './utils/useMousePosition';
+import Career from './Components/Career';
 const App = () => {
   const {x,y}= useMousePosition();
 
@@ -21,10 +22,10 @@ const App = () => {
           variants={variants}
           animate="default"
           transition={{ type: "tween", ease: "backOut" }}
-          style={{ zIndex: 0 }} // Set a higher zIndex
-
+          style={{ zIndex: 0 }}
         />
         <Body />
+        <Career/>
         <BottomNavBar />
       </div>
     </>

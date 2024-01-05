@@ -2,7 +2,12 @@ import React from 'react';
 import Graph from '../assets/blob.svg';
 import KendritImage from '../assets/kendrit.png';
 
-const Intro = () => {
+const Intro = ({ scrollToAboutMe }) => {
+  const handleReadMoreClick = () => {
+    // Call the prop function to scroll to the AboutMe section
+    scrollToAboutMe();
+  };
+
   return (
     <div className="flex lg:flex-row flex-col  h-auto sm:min-h-screen  gap-10">
       <div className="flex flex-col sm:w-full pt-48 gap-1">
@@ -18,14 +23,18 @@ const Intro = () => {
           <p>
             <span className="text-txtprimary">
               I am a junior architect based in Nepal. After my Bachelor’s
-              studies at Institute of Engineering, Pulchowk Campus , I started
+              studies at Institute of Engineering, Pulchowk Campus, I started
               as an intern in Nepal. Architecture is my passion and my goal is
               to contribute to the skyline of my beloved city.
             </span>
           </p>
         </div>
         <div className="flex flex-wrap text-xl  pt-10 font-normal   ">
-          <div className="h-12 w-32 rounded-md bg-txtsecondary text-white flex justify-center items-center font-Poppins text-base cursor-pointer">
+          {/* Button to trigger smooth scroll to AboutMe */}
+          <div
+            className="h-12 w-32 rounded-md bg-txtsecondary text-white flex justify-center items-center font-Poppins text-base cursor-pointer"
+            onClick={handleReadMoreClick}
+          >
             Read More
           </div>
         </div>
