@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Body from './Components/Body';
 import BottomNavBar from './Components/BottomNavBar';
 import {motion} from 'framer-motion'
@@ -15,7 +15,10 @@ const App = () => {
       y:y-20
     }
   }
+useEffect(()=>{
+  window.scrollTo({behavior:'smooth',left: 0,top:0})
 
+},[])
   return (
     <>
       <div>
