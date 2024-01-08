@@ -43,4 +43,6 @@ body::-webkit-scrollbar-thumb {
   mask-repeat: no-repeat;
   color: black;
 }
-
+.card{
+  box-shadow:  5px 5px 10px #050505,
+  -5px -5px 10px #151515;}

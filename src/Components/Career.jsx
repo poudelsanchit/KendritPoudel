@@ -29,7 +29,7 @@ const Career = () => {
             {careerlist.map((data,index)=>{
               return (
                 <div
-                  className="h-40 border-y-[1px] border-[#272522] w-full flex justify-center"
+                  className="h-40 border-y-[1px] border-[#272522] w-full flex justify-center shadow-[32px 32px 44px #050505,-32px -32px 44px #151515;]"
                 >
                   <div className="w-8/12 flex   sm:gap-52 gap-20 items-center">
                     <div>{data.time}</div>
