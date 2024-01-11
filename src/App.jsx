@@ -21,7 +21,6 @@ useEffect(()=>{
 },[])
   return (
     <>
-      <div>
         <motion.div
           className=" h-10 w-10  bg-txtsecondary rounded-full fixed top-0 left-0 hidden sm:block "
           variants={variants}
@@ -30,12 +29,7 @@ useEffect(()=>{
           style={{ zIndex: 0 }}
         />
         <Body />
-        <Career />
-        <Projects />
-        <Contact />
-
         <BottomNavBar />
-      </div>
     </>
   );
 }

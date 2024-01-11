@@ -1,5 +1,6 @@
-
-const Career = () => {
+import React from "react";
+import { forwardRef } from "react";
+const Career = React.forwardRef((props,ref) => {
   const careerlist = [
     {
       time: "Now",
@@ -19,9 +20,9 @@ const Career = () => {
   ];
     return (
       <>
-        <div className="w-full flex justify-center text-txtprimary  ">
+        <div className="w-full flex justify-center text-txtprimary " ref={ref}>
           <div className="flex  flex-col  gap-5 min-h-screen pt-20 w-full z-50">
-            <div className="tracking-[0.2em] font-semibold text-xl flex justify-center  ">
+            <div className="tracking-[0.2em] font-semibold text-xl flex  ">
             <div className="w-8/12 ">My Journey</div>
 
             </div>
@@ -29,7 +30,7 @@ const Career = () => {
             {careerlist.map((data,index)=>{
               return (
                 <div
-                  className="h-40 border-y-[1px] border-[#272522] w-full flex justify-center shadow-[32px 32px 44px #050505,-32px -32px 44px #151515;]"
+                  className="h-40 border-y-[1px] border-[#272522] w-full flex  shadow-[32px 32px 44px #050505,-32px -32px 44px #151515;]"
                 >
                   <div className="w-8/12 flex   sm:gap-52 gap-20 items-center">
                     <div>{data.time}</div>
@@ -52,5 +53,6 @@ const Career = () => {
   
      
   }
+)
   
   export default Career

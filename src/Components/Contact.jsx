@@ -1,13 +1,13 @@
+import React from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 
-const Contact = () => {
-  
+const Contact = React.forwardRef((props,ref) => {
     return (
       <>
-        <div className="w-full flex justify-center text-txtprimary pt-32  ">
+        <div className="w-full flex justify-center text-txtprimary pt-32  " ref={ref}>
           <div className="flex  flex-col  gap-5 h-screen  w-full z-50">
             <div className="tracking-[0.2em] font-semibold text-xl flex justify-center  ">
-              <div className="w-8/12 flex flex-col gap-14 ">
+              <div className="w-full flex flex-col gap-14 ">
                 <div className="flex gap-2 flex-col mb-5">
                   <div className="text-3xl"> Let's collaborate</div>
                   <div className="text-xs text-txttertiary">
@@ -51,5 +51,5 @@ const Contact = () => {
   
      
   }
-  
+)
   export default Contact

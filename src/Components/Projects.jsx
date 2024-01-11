@@ -5,8 +5,9 @@ import Project3 from '../assets/project3.jpg'
 import { BsArrowUpRight } from "react-icons/bs";
 import { MdArrowOutward } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
-
-const Projects = () => {
+import React from 'react';
+import { forwardRef } from 'react';
+const Projects = React.forwardRef((props,ref) => {
   const projectsData= [
     {
         projectname: 'Neo-classical architectural Building',
@@ -31,12 +32,12 @@ const Projects = () => {
   
       return (
         <>
-          <div className="w-full flex justify-center min-h-screen text-txtprimary  ">
+          <div className="w-full flex justify-center min-h-screen text-txtprimary  " ref={ref}>
             <div className="flex  flex-col   h-auto  w-full z-50 items-center  gap-10">
-              <div className="tracking-[0.2em] font-semibold text-xl   w-8/12 ">
+              <div className="tracking-[0.2em] font-semibold text-xl   w-full ">
                 Projects
               </div>
-              <div className="w-9/12 sm:w-8/12  ">
+              <div className="w-9/12 sm:w-full  ">
                 <div className="grid grid-cols-1 sm:grid-cols-2   flex-col   text-4xl  font-[550] tracking-tight gap-10">
                   {projectsData.map((data) => {
                     return (
@@ -76,5 +77,6 @@ const Projects = () => {
     
        
     }
+)
     
     export default Projects
